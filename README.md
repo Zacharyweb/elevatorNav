@@ -18,7 +18,7 @@
 2.在html文件中插入以下代码段。
 * a标签中的href属性值需要用户设置，其值即为所需导航到的元素的id值。
 * span标签中的值即为导航栏的内容，同样需要用户进行修改填写。
-  ```html
+```html
   <div id="elevatorNav">
       <ol>
           <li class="current"><a href="#p1"></a><span>First</span></li>
@@ -29,17 +29,17 @@
           <li><a href="#p6"></a><span>Sixth</span></li>
       </ol>
   </div>
-  ```
+```
 3.在javascript文件中插入以下代码。
-  ```javascript
+```javascript
   $(document).ready(function(){
       $('#elevatorNav').elevatorNav();
   }); 
-  ```
+```
 4.没了，就以上就完成了。
 
 5.相关参数说明。
-  ```javascript
+```javascript
   //用户在调用elevatorNav()方法时可传入以下参数
    $('#elevatorNav').elevatorNav({
       Left:50, //导航组件距离浏览器左侧的距离，单位px，默认50px
@@ -50,7 +50,7 @@
       fontFamily:'Microsoft YaHei', //导航栏内容文字字体，默认微软雅黑
       fontSize:14, //导航栏内容文字字体尺寸，单位px,默认14px
    }); 
-  ```
+```
 
 ### 案例代码
 
