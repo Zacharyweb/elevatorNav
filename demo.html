@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>elevatorNavDemo</title>
+	<link rel="stylesheet" href="elevatorNav.css">
+	<style>
+		body{
+			height: 2800px;
+		}
+		p {
+			font-size: 100px;
+			line-height: 100%;
+			font-weight:bold;
+			color:white;
+			text-align: center;
+		}
+		#p1{
+			width: 100%;
+			height: 400px;
+			background-color: skyblue;
+		}
+		#p2{
+			width: 100%;
+			height: 400px;
+			background-color: yellowgreen;
+		}
+		#p3{
+			width: 100%;
+			height: 400px;
+			background-color: pink;
+		}
+		#p4{
+			width: 100%;
+			height: 200px;
+			background-color: skyblue;
+		}
+		#p5{
+			width: 100%;
+			height: 450px;
+			background-color: yellowgreen;
+		}
+		#p6{
+			width: 100%;
+			height: 550px;
+			background-color: pink;
+		}
+		#p7{
+			width: 100%;
+			height: 400px;
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<p id="p1">1</p>
+	<p id="p2">2</p>
+	<p id="p3">3</p>
+	<p id="p4">4</p>
+	<p id="p5">5</p>
+	<p id="p6">6</p>
+	<p id="p7">7</p>
+	<div id="elevatorNav">
+		<ol>
+			<li class="current"><a href="#p1"></a><span>First</span></li>
+			<li><a href="#p2"></a><span>Second</span></li>
+			<li><a href="#p3"></a><span>Third</span></li>
+			<li><a href="#p4"></a><span>Fourth</span></li>
+			<li><a href="#p5"></a><span>Fifth</span></li>
+			<li><a href="#p6"></a><span>Sixth</span></li>
+			<li><a href="#p7"></a><span>Seventh</span></li>
+		</ol>
+	</div>
+</body>
+</html>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="elevatorNav.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#elevatorNav').elevatorNav();
+	});	
+</script>
